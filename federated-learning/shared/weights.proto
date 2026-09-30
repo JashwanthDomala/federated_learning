@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package federated;
+
+message ClientSubmission {
+  string clientId = 1;
+  int32 roundNumber = 2;
+  int32 dataSamples = 3;
+  repeated float weights = 4;
+}
